@@ -15,12 +15,12 @@ Open the project folder in VS Code, open **Terminal → New Terminal**, then run
 .\frontend\run.ps1
 ```
 
-Visit **http://127.0.0.1:8080/**. Leave the terminal open while using the app; press **Ctrl+C** there to stop the server.
+Visit **http://127.0.0.1:8012/**. Leave the terminal open while using the app; press **Ctrl+C** there to stop the server.
 
-If port 8080 is already occupied:
+If port 8012 is already occupied:
 
 ```powershell
-.\frontend\run.ps1 -Port 8081
+.\frontend\run.ps1 -Port 8013
 ```
 
 The launcher finds PHP on `PATH` or uses `C:\xampp\php\php.exe`. The SQLite database stays outside the web root. To seed demo users and projects, follow the administrator setup in the project-level `README.md`.

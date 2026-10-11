@@ -17,7 +17,7 @@ Open this project folder in VS Code, start a PowerShell terminal, and run:
 .\frontend\run.ps1
 ```
 
-Then open [http://127.0.0.1:8080/](http://127.0.0.1:8080/). The launcher serves the full, database-connected PHP application; its shared stylesheet is in [frontend/style.css](./frontend/style.css). Keep the terminal open while using the app and press **Ctrl+C** there to stop the server. If port 8080 is busy, run `.\frontend\run.ps1 -Port 8081`. More details are in [frontend/README.md](./frontend/README.md).
+Then open [http://127.0.0.1:8012/](http://127.0.0.1:8012/). The launcher serves the full, database-connected PHP application; its shared stylesheet is in [frontend/style.css](./frontend/style.css). Keep the terminal open while using the app and press **Ctrl+C** there to stop the server. If port 8012 is busy, run `.\frontend\run.ps1 -Port 8013`. More details are in [frontend/README.md](./frontend/README.md).
 
 PHP 7.4+ with PDO and `pdo_sqlite` is required for the default setup. Signal uses SQLite by default; its database file is created in the system temporary directory at `signal_freelancer/freelancer.db`, outside the public web root. The database tables and new columns are initialized automatically.
 

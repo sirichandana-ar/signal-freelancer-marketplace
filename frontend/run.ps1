@@ -1,5 +1,5 @@
 param(
-    [int] $Port = 8080
+    [int] $Port = 8012
 )
 
 $ErrorActionPreference = 'Stop'
@@ -22,7 +22,7 @@ if ($php) {
 
 $listener = Get-NetTCPConnection -State Listen -LocalPort $Port -ErrorAction SilentlyContinue
 if ($listener) {
-    throw "Port $Port is already in use. Run .\frontend\run.ps1 -Port 8081 to use another port."
+    throw "Port $Port is already in use. Run .\frontend\run.ps1 -Port 8013 to use another port."
 }
 
 Write-Host "Signal is starting at http://127.0.0.1:$Port/" -ForegroundColor Green
